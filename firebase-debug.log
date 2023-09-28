@@ -1,0 +1,55 @@
+[debug] [2023-09-28T05:43:22.306Z] ----------------------------------------------------------------------
+[debug] [2023-09-28T05:43:22.308Z] Command:       /usr/local/bin/firebase /Users/zainulabideen/.cache/firebase/tools/lib/node_modules/firebase-tools/lib/bin/firebase init hosting
+[debug] [2023-09-28T05:43:22.308Z] CLI Version:   12.6.1
+[debug] [2023-09-28T05:43:22.309Z] Platform:      darwin
+[debug] [2023-09-28T05:43:22.309Z] Node Version:  v16.16.0
+[debug] [2023-09-28T05:43:22.314Z] Time:          Thu Sep 28 2023 10:43:22 GMT+0500 (Pakistan Standard Time)
+[debug] [2023-09-28T05:43:22.314Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-09-28T05:43:22.419Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-09-28T05:43:22.421Z] > authorizing via signed-in user (zangbang360@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  /Users/zainulabideen/Downloads/_We Int Digital Marketing/We In Sites Codes/folio-master
+
+Before we get started, keep in mind:
+
+  * You are initializing within an existing Firebase project directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2023-09-28T05:43:22.428Z] Using project from CLI flag: we-international
+[debug] [2023-09-28T05:43:22.433Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/we-international [none]
+[debug] [2023-09-28T05:43:23.071Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/we-international 200
+[debug] [2023-09-28T05:43:23.075Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/we-international {"projectId":"we-international","projectNumber":"951868753863","displayName":"We International","name":"projects/we-international","resources":{"hostingSite":"we-international","realtimeDatabaseInstance":"we-international-default-rtdb"},"state":"ACTIVE","etag":"1_c69d901e-9a82-4ad3-9547-d839a4368730"}
+[info] i  Using project we-international (We International) 
+[info] 
+=== Hosting Setup
+[info] 
+[info] Your public directory is the folder (relative to your project directory) that
+[info] will contain Hosting assets to be uploaded with firebase deploy. If you
+[info] have a build process for your assets, use your build's output directory.
+[info] 
+[debug] [2023-09-28T05:45:54.645Z] Error: ENOTDIR: not a directory, scandir '/Users/zainulabideen/Downloads/_We Int Digital Marketing/We In Sites Codes/folio-master/	'
+    at Object.readdirSync (node:fs:1405:3)
+    at Object.readdirSync (pkg/prelude/bootstrap.js:1306:35)
+    at Object.createFileSync (/Users/zainulabideen/.cache/firebase/tools/lib/node_modules/fs-extra/lib/ensure/file.js:55:10)
+    at Config.writeProjectFile (/Users/zainulabideen/.cache/firebase/tools/lib/node_modules/firebase-tools/lib/config.js:152:12)
+    at /Users/zainulabideen/.cache/firebase/tools/lib/node_modules/firebase-tools/lib/config.js:176:22
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async doSetup (/Users/zainulabideen/.cache/firebase/tools/lib/node_modules/firebase-tools/lib/init/features/hosting/index.js:141:13)
+    at async init (/Users/zainulabideen/.cache/firebase/tools/lib/node_modules/firebase-tools/lib/init/index.js:41:9)
+[error] 
+[error] Error: An unexpected error has occurred.
